@@ -1,9 +1,10 @@
 {
-    "require": {
-        "gabordemooij/redbean": "dev-master"
-    },
     "autoload": {
-        "files": ["helpers.php"],
-        "classmap": ["controllers/"]
+        "files": [
+            "helpers.php"
+        ],
+        "classmap": [
+            "controllers/"
+        ]
     }
 }
