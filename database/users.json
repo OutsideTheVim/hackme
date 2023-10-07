@@ -1,0 +1,32 @@
+[
+    {
+        "email": "testing@123site.nl",
+        "username": "test-user",
+        "password": "pass123"
+    },
+    {
+        "email": "awdad@test.com",
+        "username": "wadaw",
+        "password": "awdawd"
+    },
+    {
+        "email": "awdad@test.com",
+        "username": "wadaw",
+        "password": "awdawd"
+    },
+    {
+        "email": "awdad@test.com",
+        "username": "wadaw",
+        "password": "awdawd"
+    },
+    {
+        "email": "awdaw@teaw.nl",
+        "username": "awdaw",
+        "password": "awdawd"
+    },
+    {
+        "email": "test@hoi.com",
+        "username": "testing",
+        "password": "getpass"
+    }
+]
