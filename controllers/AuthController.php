@@ -2,9 +2,16 @@
 
 class AuthController
 {
-    protected function RegisterHandler() // nog fixxen: check of email/username al bestaat
+    protected function RegisterHandler()
     {
         if (isset($_POST['reg'])) {
+            foreach (GetJsonContent("users.json") as $userdata) {
+                if ($_POST['email'] == $userdata->email || $_POST['usern'] == $userdata->username) {
+                    echo "email of username bestaat al!";
+                    exit(0);
+                    break;
+                }
+            }
             $email = $_POST['email'];
             $usern = $_POST['usern'];
             $passw = $_POST['passw'];

@@ -28,5 +28,10 @@
         "email": "test@hoi.com",
         "username": "testing",
         "password": "getpass"
+    },
+    {
+        "email": "neiwuemail@google.com",
+        "username": "neiwaumai",
+        "password": "getpass"
     }
 ]
