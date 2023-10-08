@@ -8,5 +8,10 @@
         "email": "passwordtest@encry.test",
         "username": "encryption",
         "password": "$2y$10$FiihF6hliVAtNWKwbs0VL.GgCvjpH8vOIplBmnXNvHVNp6LiqtWte"
+    },
+    {
+        "email": "testingsessie@tes.tcom",
+        "username": "sessie",
+        "password": "$2y$10$jXIA1IcYY7lg0yyWiHgYi.sipqAMBS.bdBx2sAMIv8a\/hOiUUIE5q"
     }
 ]

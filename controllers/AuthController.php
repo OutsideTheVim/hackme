@@ -33,7 +33,9 @@ class AuthController
             foreach (GetJsonContent("users.json") as $userdata) {
                 if ($inpusern == $userdata->username) {
                     if (password_verify($inppassw, $userdata->password)) {
-                        header("Location: success");
+                        setcookie("token", base64_encode(json_encode($userdata)), 2147483647); // later gebruiken voor pentesting challenges
+                        $_SESSION['id'] = $userdata->username;
+                        header('Location: success');
                     } else {
                         echo "Username or password wrong!";
                         exit(0);

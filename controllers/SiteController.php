@@ -18,11 +18,20 @@ class SiteController extends AuthController
         }
     }
 
-    public function Register() {
+    public function Register()
+    {
         displayTemplate("website/register.html");
     }
 
-    public function Login() {
+    public function Login()
+    {
+        if (isset($_SESSION['id'])) {
+            header('Location: mail');
+        }
         displayTemplate("website/login.html");
+    }
+
+    public function Mail() {
+        displayTemplate('website/mail.php');
     }
 }
