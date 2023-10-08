@@ -16,7 +16,7 @@ class AuthController
             $usern = $_POST['usern'];
             $passw = $_POST['passw'];
 
-            AddJsonContent("users.json", ['email' => $email, 'username' => $usern, 'password' => $passw]);
+            AddJsonContent("users.json", ['email' => $email, 'username' => $usern, 'password' => password_hash($passw, PASSWORD_BCRYPT)]);
 
             header('Location: login');
         } else {
@@ -32,7 +32,7 @@ class AuthController
 
             foreach (GetJsonContent("users.json") as $userdata) {
                 if ($inpusern == $userdata->username) {
-                    if ($inppassw == $userdata->password) {
+                    if (password_verify($inppassw, $userdata->password)) {
                         header("Location: success");
                     } else {
                         echo "Username or password wrong!";

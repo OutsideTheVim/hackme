@@ -5,33 +5,8 @@
         "password": "pass123"
     },
     {
-        "email": "awdad@test.com",
-        "username": "wadaw",
-        "password": "awdawd"
-    },
-    {
-        "email": "awdad@test.com",
-        "username": "wadaw",
-        "password": "awdawd"
-    },
-    {
-        "email": "awdad@test.com",
-        "username": "wadaw",
-        "password": "awdawd"
-    },
-    {
-        "email": "awdaw@teaw.nl",
-        "username": "awdaw",
-        "password": "awdawd"
-    },
-    {
-        "email": "test@hoi.com",
-        "username": "testing",
-        "password": "getpass"
-    },
-    {
-        "email": "neiwuemail@google.com",
-        "username": "neiwaumai",
-        "password": "getpass"
+        "email": "passwordtest@encry.test",
+        "username": "encryption",
+        "password": "$2y$10$FiihF6hliVAtNWKwbs0VL.GgCvjpH8vOIplBmnXNvHVNp6LiqtWte"
     }
 ]
