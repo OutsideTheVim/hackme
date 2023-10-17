@@ -1,7 +1,9 @@
 <?php
 
-class InformationController {
-    public function show() {
+class InformationController
+{
+    public function show()
+    {
         displayTemplate("introduction.html");
     }
 }

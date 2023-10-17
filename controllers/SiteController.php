@@ -14,6 +14,7 @@ class SiteController extends AuthController
         } else {
             if ($_GET['type'] == "login") $this->LoginHandler();
             elseif ($_GET['type'] == "register") $this->RegisterHandler();
+            elseif ($_GET['type'] == "logout") $this->LogoutHandler();
             else error();
         }
     }
@@ -31,7 +32,8 @@ class SiteController extends AuthController
         displayTemplate("website/login.html");
     }
 
-    public function Mail() {
+    public function Mail()
+    {
         displayTemplate('website/mail.php');
     }
 }

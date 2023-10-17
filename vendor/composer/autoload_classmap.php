@@ -9,6 +9,7 @@ return array(
     'AuthController' => $baseDir . '/controllers/AuthController.php',
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'InformationController' => $baseDir . '/controllers/SetupController.php',
+    'MailController' => $baseDir . '/controllers/MailController.php',
     'RouteController' => $baseDir . '/controllers/RouteController.php',
     'SiteController' => $baseDir . '/controllers/SiteController.php',
 );

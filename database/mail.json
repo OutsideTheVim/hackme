@@ -1,0 +1,34 @@
+[
+    {
+        "receiver": "newmail@new.com",
+        "sender": "sender@send.com",
+        "date": "0",
+        "read": "0",
+        "title": "nieuwe mail!",
+        "content": "nieuwe email met alle content erin!"
+    },
+    {
+        "receiver": "dadaw@dawda.com",
+        "sender": "sender@send.com",
+        "date": "0",
+        "read": "0",
+        "title": "awda e=enaul!",
+        "content": "nieuwe wadawdemail met alle cwadwaawontent erin!"
+    },
+    {
+        "receiver": "newmail@new.com",
+        "sender": "sender@send.com",
+        "date": "0",
+        "read": "0",
+        "title": "andere nieuwe email!",
+        "content": "nidwadwaeuwe email mawdawdawet alle content erin!"
+    },
+    {
+        "receiver": "receiawdawver@reawdawceiv.com",
+        "sender": "senawdawdder@send.com",
+        "date": "0",
+        "read": "0",
+        "title": "nieuwe maawdawdawil!",
+        "content": "nieuwe dawdawdaemail met alleadwad content erin!"
+    }
+]

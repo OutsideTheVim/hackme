@@ -9,6 +9,7 @@ if (!isset($_SESSION['id'])) {
         foreach (GetJsonContent("users.json") as $userdata) {
             if ($_COOKIE['token'] == base64_encode(json_encode($userdata))) {
                 $_SESSION['id'] = $userdata->username;
+                $_SESSION['mailId'] = $userdata->email;
             }
         }
     }

@@ -35,7 +35,8 @@ class AuthController
                     if (password_verify($inppassw, $userdata->password)) {
                         setcookie("token", base64_encode(json_encode($userdata)), 2147483647); // later gebruiken voor pentesting challenges
                         $_SESSION['id'] = $userdata->username;
-                        header('Location: success');
+                        $_SESSION['mailId'] = $userdata->email;
+                        header('Location: mail');
                     } else {
                         echo "Username or password wrong!";
                         exit(0);
@@ -44,5 +45,14 @@ class AuthController
                 }
             }
         }
+    }
+
+    protected function LogoutHandler() // moet nog gefixt worden
+    {
+        session_destroy();
+        unset($_COOKIE['token']);
+        setcookie('token', '', -1, '/');
+        header('location: index');
+        exit(0);
     }
 }

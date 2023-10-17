@@ -28,6 +28,7 @@ class ComposerStaticInit662f72dbac08ea50ab5ab7fde3888a99
         'AuthController' => __DIR__ . '/../..' . '/controllers/AuthController.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'InformationController' => __DIR__ . '/../..' . '/controllers/SetupController.php',
+        'MailController' => __DIR__ . '/../..' . '/controllers/MailController.php',
         'RouteController' => __DIR__ . '/../..' . '/controllers/RouteController.php',
         'SiteController' => __DIR__ . '/../..' . '/controllers/SiteController.php',
     );

@@ -1,7 +1,8 @@
 <?php
+$mail = new MailController;
+$emails = $mail->getMail($_SESSION['mailId']);
 
-$username = $_SESSION['id'];
-
+echo "Username: {$_SESSION['id']} - Email: {$_SESSION['mailId']}" . PHP_EOL;
 ?>
 
 <!DOCTYPE html>
@@ -22,22 +23,46 @@ $username = $_SESSION['id'];
         }
 
         .box {
-            margin-top: 75px;
-            width: 600px;
-            height: 400px;
+            width: 500px;
+            height: 700px;
 
             background-color: rgb(124, 127, 135);
+        }
+
+        th {
+            border: 3px solid black;
+        }
+
+        td {
+            background-color: darkgrey;
+            height: 50px;
         }
     </style>
 </head>
 
 <body>
+    <form action="auth?type=logout" method="POST">
+        <input type="submit" value="logout" name="logout">
+    </form>
+
     <div class="content">
         <div class="box">
-            <div class="text">
-                <h1>Welkom!</h1>
-                <h2><?= $username ?></h2>
-            </div>
+            <form action="" method="GET">
+                <input type="search" placeholder="Search...">
+                <input type="submit" value="Search" name="search">
+            </form>
+            <table style="width: 100%;">
+                <tr>
+                    <th><a href="">Name</a></th>
+                    <th><a href="">Unread</a></th>
+                    <th><a href="">Date</a></th>
+                </tr>
+                <?php for ($i = 0; $i < count($emails); $i++) { ?>
+                    <tr>
+                        <td><a href=""><?= $emails[$i] ?></a></td>
+                    </tr>
+                <?php } ?>
+            </table>
         </div>
     </div>
 </body>

@@ -13,5 +13,10 @@
         "email": "testingsessie@tes.tcom",
         "username": "sessie",
         "password": "$2y$10$jXIA1IcYY7lg0yyWiHgYi.sipqAMBS.bdBx2sAMIv8a\/hOiUUIE5q"
+    },
+    {
+        "email": "newmail@new.com",
+        "username": "new",
+        "password": "$2y$10$.sfey1kdAvUQo8brKpbXx.tpPUm.S2omjxPTUw5EXRkIp3M\/TlLVa"
     }
 ]
