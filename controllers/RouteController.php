@@ -8,7 +8,7 @@ class RouteController
             header('Location: ../site/index');
         }
         if(isset($_POST['subadmin'])) {
-
+            header('Location: ../admin');
         }
     }
 }

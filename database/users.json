@@ -1,27 +1,44 @@
 [
     {
-        "email": "testing@123site.nl",
-        "username": "test-user",
-        "password": "pass123"
-    },
-    {
-        "email": "passwordtest@encry.test",
-        "username": "encryption",
-        "password": "$2y$10$FiihF6hliVAtNWKwbs0VL.GgCvjpH8vOIplBmnXNvHVNp6LiqtWte"
-    },
-    {
-        "email": "testingsessie@tes.tcom",
-        "username": "sessie",
-        "password": "$2y$10$jXIA1IcYY7lg0yyWiHgYi.sipqAMBS.bdBx2sAMIv8a\/hOiUUIE5q"
-    },
-    {
         "email": "newmail@new.com",
         "username": "new",
-        "password": "$2y$10$.sfey1kdAvUQo8brKpbXx.tpPUm.S2omjxPTUw5EXRkIp3M\/TlLVa"
+        "password": "$2y$10$.sfey1kdAvUQo8brKpbXx.tpPUm.S2omjxPTUw5EXRkIp3M\/TlLVa",
+        "flags": []
     },
     {
         "email": "coolmail@cool.com",
         "username": "cool",
-        "password": "$2y$10$l6YfJRsaGGgeORAssuBqqeHWTSG7g4c0VtypnPYpMWTdwCl35pc0a"
+        "password": "$2y$10$l6YfJRsaGGgeORAssuBqqeHWTSG7g4c0VtypnPYpMWTdwCl35pc0a",
+        "flags": []
+    },
+    {
+        "email": "testdummy@testemail.com",
+        "username": "dummy",
+        "password": "$2y$10$W6Aw.REAvSccXdVuL.XMQelZOoufMq\/J5SQFRBkjP44NmWxjALQua"
+    },
+    {
+        "email": "testdummy@testemail.com",
+        "username": "dummy",
+        "password": "$2y$10$bHngm1cWkNc6oOEf.7nOxOSftGo8ZuzkFPxB3\/FwJiMwzRvqBY9OK"
+    },
+    {
+        "email": "testdummy@testemail.com",
+        "username": "dummy",
+        "password": "$2y$10$MY7XAMRN2ljH5xl1mwrqn.NOLrkm.nXdxmYmqDFPsdxRrOEOEJpla"
+    },
+    {
+        "email": "testdummy@testemail.com",
+        "username": "dummy",
+        "password": "$2y$10$ffweTEwpEt.lwKukS6w6aeGcNW3Pj9Pr3qEiI8K1gzIneR0569rie"
+    },
+    {
+        "email": "testdummy@testemail.com",
+        "username": "dummy",
+        "password": "$2y$10$4r6z.P4qT9RRs25yaaJlLOr9XajDWGG\/55sdJeR5fmv2OLNHa0fDm"
+    },
+    {
+        "email": "testdummy@testemail.com",
+        "username": "dummy",
+        "password": "$2y$10$JK0mmdYczf0N8zJ.RM.jceYkET3JThByuzFv7bUyFJNKMKr3853pm"
     }
 ]

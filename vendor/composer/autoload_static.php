@@ -25,11 +25,12 @@ class ComposerStaticInit662f72dbac08ea50ab5ab7fde3888a99
     );
 
     public static $classMap = array (
+        'AdminController' => __DIR__ . '/../..' . '/controllers/AdminController.php',
         'AuthController' => __DIR__ . '/../..' . '/controllers/AuthController.php',
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
-        'InformationController' => __DIR__ . '/../..' . '/controllers/SetupController.php',
         'MailController' => __DIR__ . '/../..' . '/controllers/MailController.php',
         'RouteController' => __DIR__ . '/../..' . '/controllers/RouteController.php',
+        'SetupController' => __DIR__ . '/../..' . '/controllers/SetupController.php',
         'SiteController' => __DIR__ . '/../..' . '/controllers/SiteController.php',
     );
 

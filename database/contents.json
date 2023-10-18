@@ -1,5 +1,70 @@
-[ 
+[
     {
-        "flags": "CTFDAWNDAWI"
+        "setup": "0"
+    },
+    {
+        "flags": [
+            "flag1",
+            "flag2",
+            "flag3"
+        ]
+    },
+    {
+        "flags": [
+            "flag1",
+            "flag2",
+            "flag3"
+        ]
+    },
+    {
+        "flags": [
+            "flag1",
+            "flag2",
+            "flag3"
+        ]
+    },
+    {
+        "flags": [
+            "flag1",
+            "flag2",
+            "flag3"
+        ]
+    },
+    {
+        "flags": [
+            "flag1",
+            "flag2",
+            "flag3"
+        ]
+    },
+    {
+        "flags": [
+            "flag1",
+            "flag2",
+            "flag3"
+        ]
+    },
+    {
+        "setup": 1
+    },
+    {
+        "flags": [
+            "flag1",
+            "flag2",
+            "flag3"
+        ]
+    },
+    {
+        "setup": 1
+    },
+    {
+        "flags": [
+            "flag1",
+            "flag2",
+            "flag3"
+        ]
+    },
+    {
+        "setup": 1
     }
 ]
