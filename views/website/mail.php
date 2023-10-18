@@ -63,7 +63,7 @@ echo "Username: {$_SESSION['id']} - Email: {$_SESSION['mailId']}" . PHP_EOL;
                 </tr>
                 <?php for ($i = 0; $i < count($emails); $i++) { ?>
                     <tr>
-                        <td><?=$emails[$i]['sender']?></br><a href="" style="font-size: 30px;"><?= $emails[$i]['title'] ?></a></td>
+                        <td><?=$emails[$i]['sender']?></br><a href="viewmail?" style="font-size: 30px;"><?= $emails[$i]['title'] ?></a></td>
                         <td><?= $isRead = $emails[$i]['read'] == 1 ? 'read' : 'unread' ?></td>
                         <td><?=$emails[$i]['date']?></td>
                     </tr>

@@ -1,42 +1,47 @@
 [
     {
+        "sender": "newmail@new.com",
         "receiver": "newmail@new.com",
-        "sender": "sender@send.com",
-        "date": "0",
-        "read": "1",
-        "title": "nieuwe mail!",
-        "content": "nieuwe email met alle content erin!"
-    },
-    {
-        "receiver": "dadaw@dawda.com",
-        "sender": "sender@send.com",
-        "date": "0",
-        "read": "0",
-        "title": "awda e=enaul!",
-        "content": "nieuwe wadawdemail met alle cwadwaawontent erin!"
-    },
-    {
-        "receiver": "newmail@new.com",
-        "sender": "sender@send.com",
-        "date": "0",
-        "read": "0",
-        "title": "andere nieuwe email!",
-        "content": "nidwadwaeuwe email mawdawdawet alle content erin!"
-    },
-    {
-        "receiver": "receiawdawver@reawdawceiv.com",
-        "sender": "senawdawdder@send.com",
-        "date": "0",
-        "read": "0",
-        "title": "nieuwe maawdawdawil!",
-        "content": "nieuwe dawdawdaemail met alleadwad content erin!"
+        "date": 0,
+        "read": 0,
+        "title": "wadaw",
+        "content": "wadaw",
+        "emailid": 3
     },
     {
         "sender": "newmail@new.com",
         "receiver": "newmail@new.com",
         "date": 0,
         "read": 0,
-        "title": "test",
-        "content": "testig"
+        "title": "wadaw",
+        "content": "wadaw",
+        "emailid": 2
+    },
+    {
+        "sender": "newmail@new.com",
+        "receiver": "newmail@new.com",
+        "date": 0,
+        "read": 0,
+        "title": "adwdw",
+        "content": "wadwa",
+        "emailid": 5
+    },
+    {
+        "sender": "newmail@new.com",
+        "receiver": "newmail@new.com",
+        "date": 0,
+        "read": 0,
+        "title": "awdwa",
+        "content": "wadwa",
+        "emailid": 1
+    },
+    {
+        "sender": "newmail@new.com",
+        "receiver": "newmail@new.com",
+        "date": 0,
+        "read": 0,
+        "title": "wadwad",
+        "content": "awdwad",
+        "emailid": 4
     }
 ]

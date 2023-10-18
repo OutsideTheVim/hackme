@@ -20,9 +20,21 @@ class MailController
             return 0;
         }
 
+        while (1) {
+            $uniqueID = rand(10000000, 999999999999999999);
+            $uni = true;
+
+            foreach (GetJsonContent('mail.json') as $email) {
+                if ($email->emailid == $uniqueID) {
+                    $uni = false;
+                }
+            }
+            if ($uni) break;
+        }
+
         AddJsonContent("mail.json", [
             'sender' => $_SESSION['mailId'], 'receiver' => $_POST['receiver'], 'date' => 0, 'read' => 0,
-            'title' => $_POST['title'], 'content' => $_POST['content']
+            'title' => $_POST['title'], 'content' => $_POST['content'], 'emailid' => $uniqueID
         ]);
 
         header('Location: ../site/mail');
