@@ -70,4 +70,8 @@ class MailController
         echo "ERROR - Failed loading email - Try again";
         exit(0);
     }
+
+    public function deleteEmail() {
+        // voor emails te verwijderen - maakt gebruik van de DeleteJSONContent in helpers.php
+    }
 }

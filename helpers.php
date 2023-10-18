@@ -28,6 +28,9 @@ function AddJsonContent($file, $content)
     return true;
 }
 
+function DeleteJsonContent($uniqueID) {
+    // voor emails enz later te verwijderen
+}
 
 function error()
 {

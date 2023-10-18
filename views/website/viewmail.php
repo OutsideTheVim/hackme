@@ -27,6 +27,11 @@ $email = $mail->getEmail($_GET['email']);
             background-color: rgb(124, 127, 135);
         }
 
+        .top-buttons {
+            display: flex;
+            justify-content: space-around;
+        }
+
         th {
             border: 3px solid black;
         }
@@ -39,9 +44,14 @@ $email = $mail->getEmail($_GET['email']);
 </head>
 
 <body>
-    <form action="mail">
-        <input type="submit" value="Back">
-    </form>
+    <div class="top-buttons">
+        <form action="mail">
+            <input type="submit" value="Back">
+        </form>
+        <form action="mail" method="POST">
+            <input type="submit" value="Delete" name="del">
+        </form>
+    </div>
     <div class="content">
         <div class="box">
             <p>Receiver: </br><?= $email->receiver ?></p>
@@ -49,7 +59,8 @@ $email = $mail->getEmail($_GET['email']);
             <p>Date: </br><?= $email->date ?></p>
             <h1>Title: <?= $email->title ?></h1>
             </br>
-            <h2>Content: </h2><h4><?= $email->content ?></h4>
+            <h2>Content: </h2>
+            <h4><?= $email->content ?></h4>
         </div>
     </div>
 </body>
