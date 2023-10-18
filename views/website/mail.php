@@ -45,6 +45,10 @@ echo "Username: {$_SESSION['id']} - Email: {$_SESSION['mailId']}" . PHP_EOL;
         <input type="submit" value="logout" name="logout">
     </form>
 
+    <form action="newmail" method="POST">
+        <input type="submit" value="+" style="height: 25px; width: 25px;">
+    </form>
+
     <div class="content">
         <div class="box">
             <form action="" method="GET">
@@ -59,7 +63,9 @@ echo "Username: {$_SESSION['id']} - Email: {$_SESSION['mailId']}" . PHP_EOL;
                 </tr>
                 <?php for ($i = 0; $i < count($emails); $i++) { ?>
                     <tr>
-                        <td><a href=""><?= $emails[$i] ?></a></td>
+                        <td><?=$emails[$i]['sender']?></br><a href="" style="font-size: 30px;"><?= $emails[$i]['title'] ?></a></td>
+                        <td><?= $isRead = $emails[$i]['read'] == 1 ? 'read' : 'unread' ?></td>
+                        <td><?=$emails[$i]['date']?></td>
                     </tr>
                 <?php } ?>
             </table>

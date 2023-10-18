@@ -36,4 +36,8 @@ class SiteController extends AuthController
     {
         displayTemplate('website/mail.php');
     }
+
+    public function NewMail() {
+        displayTemplate('website/sendmail.php');
+    }
 }

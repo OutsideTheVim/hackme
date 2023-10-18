@@ -3,7 +3,7 @@
         "receiver": "newmail@new.com",
         "sender": "sender@send.com",
         "date": "0",
-        "read": "0",
+        "read": "1",
         "title": "nieuwe mail!",
         "content": "nieuwe email met alle content erin!"
     },
@@ -30,5 +30,13 @@
         "read": "0",
         "title": "nieuwe maawdawdawil!",
         "content": "nieuwe dawdawdaemail met alleadwad content erin!"
+    },
+    {
+        "sender": "newmail@new.com",
+        "receiver": "newmail@new.com",
+        "date": 0,
+        "read": 0,
+        "title": "test",
+        "content": "testig"
     }
 ]
