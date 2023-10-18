@@ -41,19 +41,33 @@ class MailController
         exit(0);
     }
 
-    public function getMail($receiver)
+    public function getMailInfo($receiver)
     {
         $emails = [];
 
         foreach (GetJsonContent("mail.json") as $email) {
             if ($email->receiver == $receiver) {
                 $emails[] = [
-                    'title' => $email->title, 'sender' => $email->sender,
+                    'title' => $email->title, 'sender' => $email->sender, 'emailid' => $email->emailid,
                     'read' => $email->read, 'date' => $email->date
                 ];
             }
         }
 
         return $emails;
+    }
+
+    public function getEmail($unid)
+    {
+        foreach (GetJsonContent("mail.json") as $email) {
+            if ($email->emailid == $unid) {
+                return $email;
+                exit(0);
+                break;
+            }
+        }
+
+        echo "ERROR - Failed loading email - Try again";
+        exit(0);
     }
 }

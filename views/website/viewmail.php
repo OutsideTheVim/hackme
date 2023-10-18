@@ -1,4 +1,6 @@
 <?php
+$mail = new MailController;
+$email = $mail->getEmail($_GET['email']);
 ?>
 
 <!DOCTYPE html>
@@ -37,9 +39,17 @@
 </head>
 
 <body>
+    <form action="mail">
+        <input type="submit" value="Back">
+    </form>
     <div class="content">
         <div class="box">
-            
+            <p>Receiver: </br><?= $email->receiver ?></p>
+            <p>Sender: </br><?= $email->sender ?></p>
+            <p>Date: </br><?= $email->date ?></p>
+            <h1>Title: <?= $email->title ?></h1>
+            </br>
+            <h2>Content: </h2><h4><?= $email->content ?></h4>
         </div>
     </div>
 </body>

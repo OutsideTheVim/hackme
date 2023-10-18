@@ -37,11 +37,23 @@ class SiteController extends AuthController
         displayTemplate('website/mail.php');
     }
 
-    public function NewMail() {
+    public function NewMail()
+    {
         displayTemplate('website/sendmail.php');
     }
 
-    public function ViewMail() {
+    public function ViewMail()
+    {
+        if (!isset($_GET['email'])) error();
+
+        foreach (GetJsonContent('mail.json') as $emails) {
+            if ($emails->emailid == $_GET['email']) {
+                if ($emails->receiver !== $_SESSION['mailId']) {
+                    error();
+                }
+            }
+        }
+
         displayTemplate('website/viewmail.php');
     }
 }
