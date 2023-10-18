@@ -2,6 +2,7 @@
 
 class AuthController
 {
+
     protected function RegisterHandler()
     {
         if (isset($_POST['reg'])) {
@@ -54,5 +55,19 @@ class AuthController
         setcookie('token', '', -1, '/');
         header('location: index');
         exit(0);
+    }
+
+    public function IsAuth()
+    {
+        if (!isset($_SESSION['id'])) {
+            if (isset($_COOKIE['token'])) {
+                foreach (GetJsonContent("users.json") as $userdata) {
+                    if ($_COOKIE['token'] == base64_encode(json_encode($userdata))) {
+                        $_SESSION['id'] = $userdata->username;
+                        $_SESSION['mailId'] = $userdata->email;
+                    }
+                }
+            } else error();
+        } else return true;
     }
 }

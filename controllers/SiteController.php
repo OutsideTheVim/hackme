@@ -34,16 +34,19 @@ class SiteController extends AuthController
 
     public function Mail()
     {
+        $this->IsAuth();
         displayTemplate('website/mail.php');
     }
 
     public function NewMail()
     {
+        $this->IsAuth();
         displayTemplate('website/sendmail.php');
     }
 
     public function ViewMail()
     {
+        $this->IsAuth();
         if (!isset($_GET['email'])) error();
 
         foreach (GetJsonContent('mail.json') as $emails) {

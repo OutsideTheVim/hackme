@@ -21,7 +21,7 @@ class MailController
         }
 
         while (1) {
-            $uniqueID = rand(10000000, 999999999999999999);
+            $uniqueID = rand(1, 999999999999999999);
             $uni = true;
 
             foreach (GetJsonContent('mail.json') as $email) {
