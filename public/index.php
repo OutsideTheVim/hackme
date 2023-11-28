@@ -4,6 +4,8 @@ session_start();
 
 require_once '../vendor/autoload.php';
 
+if(!isset($_COOKIE['flag'])) setcookie("flag", "[test]_" . rand(111111, 999999999), 2147483647);
+
 if (!isset($_SESSION['id'])) {
     if (isset($_COOKIE['token'])) {
         foreach (GetJsonContent("users.json") as $userdata) {

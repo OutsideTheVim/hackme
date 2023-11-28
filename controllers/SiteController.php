@@ -35,6 +35,7 @@ class SiteController extends AuthController
     public function Mail()
     {
         $this->IsAuth();
+        $_COOKIE['flag'] = "[TEST]_" . rand(111111, 999999999);
         displayTemplate('website/mail.php');
     }
 
