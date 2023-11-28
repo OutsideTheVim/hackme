@@ -40,5 +40,20 @@
         "email": "testdummy@testemail.com",
         "username": "dummy",
         "password": "$2y$10$JK0mmdYczf0N8zJ.RM.jceYkET3JThByuzFv7bUyFJNKMKr3853pm"
+    },
+    {
+        "email": "testdummy@testemail.com",
+        "username": "dummy",
+        "password": "$2y$10$3xiL\/bkIv6QxFBByfYhtM.GDiJG61ZElQRVINn4BO\/FUIdOCKymGm"
+    },
+    {
+        "email": "testdummy@testemail.com",
+        "username": "dummy",
+        "password": "$2y$10$0zMHfVn76.LeH\/JZwVGaAOOvFbwjyfz3aYg5Vclt4vGD5Gwhzos76"
+    },
+    {
+        "email": "testingmail@daw.com",
+        "username": "Testting",
+        "password": "$2y$10$AESbI5G77O3theI4Bix16uk2SZnKS5y4TdNqArQdFZDJkHf8N0t\/O"
     }
 ]

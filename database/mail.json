@@ -1,7 +1,7 @@
 [
     {
-        "sender": "newmail@new.com",
-        "receiver": "newmail@new.com",
+        "sender": "newmaawdawdail@new.com",
+        "receiver": "newmaawdawdawil@new.adwawdcom",
         "date": 0,
         "read": 0,
         "title": "wadaw",
@@ -124,5 +124,23 @@
         "title": "'dadwad",
         "content": "<?php echo $_SESSION['id']?>",
         "emailid": 384595528608975702
+    },
+    {
+        "sender": "testingmail@daw.com",
+        "receiver": "coolmail@cool.com",
+        "date": 0,
+        "read": 0,
+        "title": "wadwa",
+        "content": "wadaw",
+        "emailid": 38242016622460164
+    },
+    {
+        "sender": "testingmail@daw.com",
+        "receiver": "testingmail@daw.com",
+        "date": 0,
+        "read": 0,
+        "title": "awdaw",
+        "content": "wadwa",
+        "emailid": 395369558538753395
     }
 ]

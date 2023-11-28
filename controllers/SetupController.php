@@ -6,7 +6,7 @@ class SetupController
     private function CreateFlags()
     {
         try {
-            AddJsonContent("contents.json", ["flags" => ["flag1", "flag2", "flag3"]]); // later random worden gemaakt
+            AddJsonContent("flags.json", ["flags" => ["flag1", "flag2", "flag3"]]); // later random worden gemaakt
         } catch (Exception $e) {
             echo $e->getMessage();
             return "failed";
@@ -47,12 +47,6 @@ class SetupController
         }*/
         if (!$this->CreateDummys()) {
             return "dummy";
-        }
-
-        try {
-            AddJsonContent("contents.json", ["setup" => 1]);
-        } catch (Exception $e) {
-            $e->getMessage();
         }
     }
 
